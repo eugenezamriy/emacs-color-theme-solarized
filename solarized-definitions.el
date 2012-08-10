@@ -499,6 +499,15 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (rcirc-bright-nick ((t (:foreground ,magenta))))
              (rcirc-server ((t (:foreground ,base1))))
              (rcirc-timestamp ((t (:foreground ,base01))))
+             ;; elscreen
+             (elscreen-tab-current-screen-face
+              ((t (,@fg-base1 ,@bg-base02 ,@fmt-revbb :box nil))))
+             (elscreen-tab-control-face
+              ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
+             (elscreen-tab-background-face
+              ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
+             (elscreen-tab-other-screen-face
+              ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
              ;;font-latex
              (font-latex-warning-face ((t (,@fg-red))))
              (font-latex-sectioning-5-face ((t (,@fg-violet))))
